@@ -1,0 +1,36 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/themes/twentytwentyfour/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/cache/*
+
+# Exclude specific files and directories within theme-sage-challenge
+web/app/themes/theme-sage-challenge/node_modules/
+web/app/themes/theme-sage-challenge/vendor/
+web/app/themes/theme-sage-challenge/public/
+web/app/themes/theme-sage-challenge/.env
+web/app/themes/theme-sage-challenge/.budfiles
+web/app/themes/theme-sage-challenge/npm-debug.log
+web/app/themes/theme-sage-challenge/yarn-error.log
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml

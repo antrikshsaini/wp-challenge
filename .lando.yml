@@ -1,0 +1,32 @@
+name: wp-challenge
+recipe: wordpress
+config:
+  webroot: web
+  database: mysql
+services:
+  appserver:
+    type: php:8.2
+    build_as_root:
+      - apt-get update -qq && apt-get install -y -qq npm
+      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+      - apt-get install -y nodejs
+    build:
+      - npm install --global yarn
+      - cd /app/web/app/themes/sage && yarn install
+      - cd /app/web/app/themes/sage && yarn build
+  database:
+    type: mysql:5.7
+    creds:
+      user: wordpress
+      password: wordpress
+      database: wordpress
+tooling:
+  wp:
+    service: appserver
+    cmd: wp
+  composer:
+    service: appserver
+  yarn:
+    service: appserver
+  npm:
+    service: appserver
