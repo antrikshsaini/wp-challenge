@@ -224,3 +224,8 @@ Final Step!! Now you just need to go to /wp-admin on the site url that lando has
 Once that is done please active the theme and plugins
 
 ## Fini!!!
+
+<img width="1536" alt="Screenshot 2024-08-03 at 10 02 24 AM" src="https://github.com/user-attachments/assets/60326419-6a0f-419f-b758-24dfaa86408b">
+<img width="480" alt="Screenshot 2024-08-03 at 10 02 06 AM" src="https://github.com/user-attachments/assets/29e0a25c-60f2-425a-9eb4-caf3f9728f65">
+
+
